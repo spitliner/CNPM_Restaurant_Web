@@ -1,0 +1,59 @@
+.menu {
+    position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+    background-color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header {
+    position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 93%;
+	top: 0;
+    padding: 5px 5px 5px 5px;
+    background-color: red;
+	border: solid #000000 0.5px;
+}
+.category {
+    position: absolute;
+	left: 0;
+	right: 90%;
+	bottom: 0;
+	top: 7%;
+    padding: 5px 5px 5px 5px;
+    background-color: blue;
+	border: solid #000000 0.5px;
+}
+.main_menu {
+    position: absolute;
+	left: 10%;
+	right: 20%;
+	bottom: 0;
+	top: 7%;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+	border: solid #000000 0.5px;
+}
+.cart {
+    position: absolute;
+	left: 80%;
+	right: 0;
+	bottom: 20%;
+	top: 7%;
+    padding: 5px 5px 5px 5px;
+    background-color: orange;
+	border: solid #000000 0.5px;
+}
+.total_price {
+    position: absolute;
+	left: 80%;
+	right: 0;
+	bottom: 0;
+	top: 80%;
+    padding: 5px 5px 5px 5px;
+    background-color: green;
+	border: solid #000000 0.5px;
+}
