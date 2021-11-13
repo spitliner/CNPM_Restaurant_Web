@@ -11,13 +11,13 @@ li {
 
 /* header */
 nav {
-  /* padding: 10px; */
-  /* width: 100%; */
   display: flex;
-  background: #f1df11;
+  background: rgb(255, 69, 69);
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 nav .img-nav img {
- /* width: 50%; */
  margin-top: 0.5vw;
  margin-bottom: 0.5vw;
  margin-left: 2vw;
@@ -25,67 +25,20 @@ nav .img-nav img {
 }
 
 #cart {
-  font-size: 20px;
-  height: 80px;
+  font-size: 1.5vw;
+  height: 6vw;
   color: #fff;
   background: #f00;
   border: 3px solid transparent;
   border-color: #000;
-  border-radius: 10px;
+  border-radius: 1.5vw;
   outline: none;
-  padding: 12px;
+  padding: 1vw;
   cursor: pointer;
   position: fixed;
   right: 3vw;
   bottom: 3vw;
 }
-
-/* nav .content-nav {
-  display: flex;
-  line-height: 2rem;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 60%;
-}
-
-nav .content-nav ul {
-  display: flex;
-}
-
-nav .content-nav ul li a {
-  text-decoration: none;
-  color: #43433e;
-  text-transform: uppercase;
-  padding: 0 15px;
-  font-weight: 800;
-}
-
-nav .content-nav ul li a:hover {
-  color: #fff;
-}
-
-.content-nav form {
-  position: relative;
-}
-
-.content-nav form input {
-  border: none;
-  background: #fff;
-  padding: 7px;
-  outline: none;
-  border-radius: 12px;
-}
-
-.content-nav form button {
-  padding: 5px;
-  border-radius: 12px;
-  position: absolute;
-  right: 0;
-  top: 2px;
-  border: none;
-  outline: none;
-  background: #fff;
-} */
 
 /* modal */
 .modal {
@@ -292,21 +245,33 @@ h5.modal-title {
 
 /* footer */
 .footer-item {
-  padding: .5rem 2rem;
-  background: #f1df11;
+  padding: 0;
+  background: rgb(255, 69, 69);
   display: flex;
-
+  height: 7vw;
+  padding-left: 2vw;
+  border-top: solid black 2px;
+  text-align: center;
+}
+.footer-item .contact_infor {
+  font-size: 1.2vw;
+  padding-left: 9vw;
+  margin-top: 0.5vw;
+  color: white;
+}
+.contact_font {
+  color: rgb(0, 0, 0);
 }
 
 .footer-item .img-footer {
   align-items: center;
   display: flex;
+  margin: 1vw;
 }
 
 .footer-item .img-footer img {
-  width: 30%;
+  height: 100%;
 }
-
 .footer-item .social-footer {
   display: flex;
   align-items: center;
@@ -481,4 +446,30 @@ h5.modal-title {
   border: none;
   outline: none;
   background: #fff;
+}
+
+
+#myBtn {
+  width: 6vw;
+  height: 6vw;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10vw; /* Place the button at the bottom of the page */
+  right: 3vw; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* Some padding */
+  border-radius: 1vw; /* Rounded corners */
+}
+#bttbutton {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 1vw;
+}
+#myBtn:hover {
+  width: 6vw;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
