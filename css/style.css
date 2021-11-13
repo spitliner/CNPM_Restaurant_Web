@@ -154,11 +154,23 @@ nav .content-nav ul li a:hover {
   background-color: #fff;
   border-color: #ccc;
 }
+.btn-secondary:hover {
+  background-color: rgb(216, 216, 216);
+}
+.btn-secondary:active {
+  background-color: rgb(168, 168, 168);
+}
 
 .btn-primary {
   color: #fff;
   background-color: #0275d8;
   border-color: #0275d8;
+}
+.btn-primary:hover {
+  background-color: #005fb3;
+}
+.btn-primary:active {
+  background-color: #004888;
 }
 
 .modal-header {
@@ -192,6 +204,10 @@ h5.modal-title {
 #cart:hover {
   border-color: #fff;
 }
+#cart:active {
+  background-color: rgb(175, 0, 0);
+  border-color: #fff;
+}
 
 /* wrapper */
 .wrapper {
@@ -208,6 +224,13 @@ h5.modal-title {
   display: block;
   float: left;
   width: 24%;
+  /* border: solid black 1px;
+  border-radius: 5%; */
+}
+.products ul .main-product:hover {
+  width: 24%;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2), 0 18px 60px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .products ul .no-margin {
@@ -216,6 +239,10 @@ h5.modal-title {
 
 .products ul .img-product img {
   width: 100%;
+}
+.content-product {
+  margin-bottom: 5%;
+  padding: 0 0 0 0 ;
 }
 
 .content-product .content-product-h3 {
@@ -238,7 +265,7 @@ h5.modal-title {
 }
 
 .main-product .content-product .content-product-deltals .price {
-  color: #c7b200;
+  color: #ff0000;
   font-weight: 700;
   margin-right: 1rem;
   vertical-align: middle;
@@ -257,7 +284,10 @@ h5.modal-title {
 }
 
 .content-product .content-product-deltals .btn-cart:hover {
-  background: #f00;
+  background: rgb(201, 0, 0);
+}
+.content-product .content-product-deltals .btn-cart:active {
+  background: rgb(255, 85, 85);
 }
 
 /* footer */
