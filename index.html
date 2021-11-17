@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Vật Lú Restaurant!</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css" /> 
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <!-- bắt đầu nav-mobile -->
+            <div class="nav-mobile">
+                <div class="icon-mobile" id="btnmenu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                
+            </div> 
+            <!-- kết thúc nav-mobile -->
+            <div class="img-nav">
+                <img src="images/logo.png" alt="" />
+            </div>
+            
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Cart
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Products</span>
+                            <span class="cart-price cart-header cart-column">Price</span>
+                            <span class="cart-quantity cart-header cart-column">Quantity</span>
+                        </div>
+                        <div class="cart-items">
+                           
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total:</strong>
+                            <span class="cart-total-price">0$</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="bttbutton" src="images/backtotop.png"></button>
+    <!-- content -->
+    <ul class="category-zone">
+        <li class="category-item">
+            <img class="category-img" src="images/category/item08.jpg">
+            <div class="category-title">Fast food</div>
+        </li>
+        <li class="category-item">
+            <img class="category-img" src="images/category/item02.jpg">
+            <div class="category-title">Entrée</div>
+        </li>
+        <li class="category-item">
+            <img class="category-img" src="images/category/item05.jpg">
+            <div class="category-title">Salad</div>
+        </li>
+        <li class="category-item">
+            <img class="category-img" src="images/category/item07.jpg">
+            <div class="category-title">Dessert</div>
+        </li>
+        <li class="category-item">
+            <img class="category-img" src="images/category/item03.jpg">
+            <div class="category-title">Refreshment</div>
+        </li>
+    </ul>
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item01.jpg"alt="">
+			<!--figcaption>Những chiếc burger thơm ngon với thịt bò mềm mại, phô mai béo ngậy, rau xanh tươi mát sẽ giúp bạn vượt qua một ngày dài bận rộn.</figcaption-->
+            <figcaption>We offer these burgers, especially for those who wish for a quick meal. Even though hastily made for you, we assure you that it would bring you the energy needed for your day. </figcaption>
+			</figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Cheese Hamburger</h3>
+			<div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">5$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item02.jpg"
+                            alt="">
+			<!--figcaption>Pizza Pepperoni trứ danh của miền Nam Italia, với sự kết hợp của nguyên liệu tươi ngon và các loại gia vị đặc trưng sẽ mang đến trải nghiệm khó quên cho bạn.</figcaption -->
+            <figcaption>Pizza with Pepperoni topping is the best choice for families, friends, or any large gathering. Hornel is our choice, when it comes to the pepperoni.</figcaption>
+			</figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Pepperoni Pizza</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">10$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item03.jpg"
+                            alt="">
+            <figcaption>Orange juice is the perfect refreshment for a scorching summer day. Using only organic oranges, we assure that your drink is also an excellent choice for your health. </figcaption>
+			</figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Orange Juice</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item04.jpg"
+                            alt="">
+			<!--figcaption>Sợi mỳ Spaghetti trứ danh, kết hợp cùng thịt bò thơm mềm và cà chua Sottolestelle, giúp bạn trải nghiệm cảm giác thưởng thức một đặc sản Ý chính hiệu.</figcaption-->
+			<figcaption> Our secret recipe sauce, using locally grown tomatoes, is what makes this dish a wonderful main course choice. We even have a meatless version, as the will of our customers.  </figcaption>
+            </figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">VL1's Spaghetti</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">10$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item05.jpg"
+                            alt="">
+			<!--figcaption>Món ăn không thể bỏ qua với các tín đồ làm đẹp! Rau củ tươi mát kết hợp cùng bơ Đà Lạt hảo hạng mang lại cảm giác thanh tịnh, nhẹ nhàng.</figcaption-->
+            <figcaption>A great choice, for vegans, vegetarians, or simply food lovers alike! We guarantee to use fresh avocado straight from Dalat, and locally grown vegetable.</figcaption>
+			</figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Avocado Salad</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">3$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item06.jpg"
+                            alt="">
+			<!--figcaption>Lựa chọn tuyệt vời cho các bữa tiệc sang trọng, ấm cúng! Một ly rượu vang cùng một miếng beefsteak cho bữa tối, thật tuyệt vời đúng không nào?</figcaption-->
+			<figcaption>A fine choice, especially for fancy dinner. Our wine experts will let you know, which of our great wine collection would go well with your dinner. </figcaption>
+            </figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Dalat Wine</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item07.jpg"
+                            alt="">
+			<!--figcaption>Công thức đặc biệt từ các thợ làm bánh nhà nghề đến từ xứ sở kim chi, với lớp kem thơm dịu đặc biệt phủ lên phần bánh mềm xốp, mịn màng.</figcaption-->
+            <figcaption>Made with the dedication of our pastry chef, this Korean confectionery is a delightful choice for dessert, or birthday parties. The icing would bring joy for your great day</figcaption>
+			</figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Korean Cake</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <figure>
+			<img class="img-prd"
+                            src="images/menu/item08.jpg"
+                            alt="">
+			<!--figcaption>Thưởng thức đặc sản của miền Nam yêu thương với vỏ bánh nóng hổi giòn rụm, tôm tươi chắc nịch kết hợp với rau xanh tươi mát, bổ dưỡng tuyệt vời.</figcaption -->
+			<figcaption>The crispy tortilla, the delicious shrimps, the freshly picked greens, all in one bite. This uniquely Southern Vietnamese dish will surely bring you joy and amazement.</figcaption>
+            </figure>
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Bánh xèo</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">3$</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img src="images/logo.png" alt="" />
+            </div>
+            <div class="contact_infor">
+                <div class="contact_row"><strong class="contact_title">Contacts</strong></div>
+                <div class="contact_row"><strong class="contact_font">Address:</strong> HCMUT CS1, HCM City, VN</div>
+                <div class="contact_row"><strong class="contact_font">Phone:</strong> 084 0000 000</div>
+                <div class="contact_row"><strong class="contact_font">Email:</strong> vl1res@gmail.com</div>
+                <div class="contact_row"><strong class="contact_font">Fax:</strong> +84 000 000 000</div>
+            </div>
+            <div class="contact_infor">
+                <div class="contact_row"><strong class="contact_title">About Us</strong></div>
+                <div class="contact_row">VL1Restaurant Co.op</div>
+                <div class="contact_row">VL1 Develop Team</div>
+                <div class="contact_row">Support Team</div>
+            </div>
+        </div>
+    </footer>
+    <!-- script -->
+     <script src="js/main.js"></script> 
+</body>
+
+</html>
