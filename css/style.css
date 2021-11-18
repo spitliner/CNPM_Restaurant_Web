@@ -69,6 +69,67 @@ nav .img-nav img {
     }
 }
 /*===============================================||
+||                 MINI - ZONE                   ||
+||  CSS for mini-zone view when click item menu  ||
+||===============================================*/
+.mini-zone-content {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0.2vw solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    outline: 0;
+    margin-top: 50px;
+}
+.mini-zone-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #aaaaaa;
+  padding: 5px 10px;
+}
+h5.modal-title {
+  font-size: 20px;
+}
+.mini-zone-close {
+  color: #aaaaaa;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.mini-zone-close:hover,
+.mini-zone-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mini-zone-body {
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+    .mini-zone-content {
+        border-radius: 15px;
+        width: 1000px;
+    }
+    h5.mini-zone-modal-title {
+        font-size: 28px;
+    }
+    .mini-zone-close {
+        font-size: 35px;
+    }
+    .mini-zone-header {
+        padding: 10px 20px;
+    }
+}
+/*===============================================||
 ||                     MODAL                     ||
 ||  CSS for cart view when click to cart button  ||
 ||===============================================*/
