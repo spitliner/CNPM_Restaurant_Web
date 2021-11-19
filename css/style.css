@@ -477,6 +477,8 @@ h5.modal-title {
     margin: 0px;
     padding: 0;
     display: inline-block;
+    width: 100%;
+    min-height: 250px;
 }
 .products {
     display: block;
@@ -545,6 +547,9 @@ h5.modal-title {
     background: rgb(255, 85, 85);
 }
 @media (min-width: 800px) {
+    .wrapper {
+        min-height: 130px;
+    }
     .products .main-product {
         margin: 10px 1%;
         display: block;
@@ -592,6 +597,14 @@ h5.modal-title {
 }
 .footer-item .contact_infor .contact_font {
   color: rgb(10, 10, 10);
+}
+@media (min-width: 700px) {
+  .wrapper {
+        min-height: 500px;
+    }
+  .footer-item {
+    height: 200px;
+  }
 }
 @media (min-width: 800px) {
     .footer-item {
