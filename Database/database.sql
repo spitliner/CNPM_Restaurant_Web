@@ -3,22 +3,22 @@ CREATE DATABASE pos_system;
 USE pos_system;
 /*================================ ADD TABLE ================================*/
 CREATE TABLE `category` (
-	`id`	SMALLINT UNSIGNED NOT NULL,
-	`name`	VARCHAR(20) NOT NULL,
+ `id` SMALLINT UNSIGNED NOT NULL,
+ `name` VARCHAR(20) NOT NULL,
     PRIMARY KEY (`id`)
 );
 CREATE TABLE `menu` (
-	`id`			CHAR(3) NOT NULL,
-    `name`			VARCHAR(30) NOT NULL,
-    `name-eng`		VARCHAR(30) NOT NULL,
-    `price`			VARCHAR(10) NOT NULL,
-    `desciption`	VARCHAR(100) NOT NULL,
-    `img`			VARCHAR(100) NOT NULL,
+ `id`   CHAR(3) NOT NULL,
+    `name`   VARCHAR(30) NOT NULL,
+    `name-eng`  VARCHAR(30) NOT NULL,
+    `price`   VARCHAR(10) NOT NULL,
+    `desciption` VARCHAR(100) NOT NULL,
+    `img`   VARCHAR(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
 CREATE TABLE `category_food` (
-	`id`		CHAR(3) NOT NULL,
-    `id_cate`	SMALLINT UNSIGNED NOT NULL,
+ `id`  CHAR(3) NOT NULL,
+    `id_cate` SMALLINT UNSIGNED NOT NULL,
     PRIMARY KEY (`id`,`id_cate`)
 );
 /*================================ ADD CONSTRAINT ================================*/
@@ -30,7 +30,7 @@ DELIMITER $$
 CREATE TRIGGER `delete_category_on_category_food` BEFORE DELETE ON `category`
 FOR EACH ROW
 BEGIN
-	DELETE FROM `category_food` WHERE `id_cate` = OLD.`id`;
+ DELETE FROM `category_food` WHERE `id_cate` = OLD.`id`;
 END;
 $$
 DELIMITER ;
@@ -38,7 +38,7 @@ DELIMITER $$
 CREATE TRIGGER `auto_add_category_default` AFTER INSERT ON `menu`
 FOR EACH ROW
 BEGIN
-	INSERT INTO `category_food` VALUES (NEW.`id`,0);
+ INSERT INTO `category_food` VALUES (NEW.`id`,0);
 END;
 $$
 DELIMITER ;
