@@ -1,13 +1,13 @@
 loadMenu(0)
-var category_btn = document.getElementsByClassName("category-item")
-for (var i = 0; i < category_btn.length; i++) {
-    var category = category_btn[i];
-    category.addEventListener("click", function (event) {
-        document.getElementsByClassName("products").innerHTML = "";
-        document.getElementsByClassName("mini-zone").innerHTML = "";
-        loadMenu(i)
-    })
-}
+// var category_btn = document.getElementsByClassName("category-item")
+// for (var i = 0; i < category_btn.length; i++) {
+//     var category = category_btn[i];
+//     category.addEventListener("click", function (event) {
+//         document.getElementsByClassName("products").innerHTML = "";
+//         document.getElementsByClassName("mini-zone").innerHTML = "";
+//         loadMenu(i)
+//     })
+// }
 function loadMenu(category) {
     // var menu = chỗ này đặt code trả về menu theo category
     var menu;

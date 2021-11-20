@@ -23,7 +23,23 @@ window.onclick = function (event) {
 }
 
 // Giỏ Hàng Of VatLu1cart
-
+var add_cart = document.getElementsByClassName("mini-zone-btn-cart");
+var modal = document.getElementById("myModal");
+for (var i = 0; i < add_cart.length; i++) {
+  var add = add_cart[i];
+  add.addEventListener("click", function (event) {
+    var button = event.target;
+    var product = button.parentElement.parentElement.parentElement.parentElement.parentElement;
+    var img = product.parentElement.getElementsByClassName("img-prd")[0].src;
+    var title = product.getElementsByClassName("mini-zone-modal-title")[0].innerText;
+    var price = product.getElementsByClassName("mini-zone-money")[0].innerText;
+    addItemToCart(title, price, img);
+    var dis = document.getElementById(title);
+    dis.style.display = "none";
+    modal.style.display = "block";
+    updatecart()
+  })
+}
 // xóa cart
 var remove_cart = document.getElementsByClassName("btn-danger");
 for (var i = 0; i < remove_cart.length; i++) {
