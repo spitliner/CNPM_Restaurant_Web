@@ -12,7 +12,7 @@ CREATE TABLE `menu` (
     `name`   VARCHAR(30) NOT NULL,
     `name_eng`  VARCHAR(30) NOT NULL,
     `price`   VARCHAR(10) NOT NULL,
-    `desciption` VARCHAR(100) NOT NULL,
+    `description` VARCHAR(100) NOT NULL,
     `img`   VARCHAR(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
