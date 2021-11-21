@@ -8,7 +8,8 @@
     <title>Welcome to Vật Lú Restaurant!</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/style.css" /> 
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -20,258 +21,436 @@
                 <div class="icon-mobile" id="btnmenu">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
-                
-            </div> 
+            </div>
             <!-- kết thúc nav-mobile -->
             <div class="img-nav">
                 <img src="images/logo.png" alt="" />
             </div>
-            
+
             <!-- The Modal -->
             <button id="cart">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                Cart
+                Giỏ Hàng
             </button>
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Cart</h5>
+                        <h5 class="modal-title">Giỏ Hàng</h5>
                         <span class="close">&times;</span>
                     </div>
                     <div class="modal-body">
                         <div class="cart-row">
-                            <span class="cart-item cart-header cart-column">Products</span>
-                            <span class="cart-price cart-header cart-column">Price</span>
-                            <span class="cart-quantity cart-header cart-column">Quantity</span>
+                            <span class="cart-item cart-column cart-header">Sản Phẩm</span>
+                            <span class="cart-price cart-column cart-header">Giá</span>
+                            <span class="cart-quantity cart-column cart-header">Số Lượng</span>
                         </div>
                         <div class="cart-items">
-                           
+
                         </div>
                         <div class="cart-total">
-                            <strong class="cart-total-title">Total:</strong>
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
                             <span class="cart-total-price">0$</span>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary close-footer">Close</button>
-                        <button type="button" class="btn btn-primary order">Checkout</button>
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
                     </div>
                 </div>
             </div>
         </nav>
 
     </header>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="bttbutton" src="images/backtotop.png"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="bttbutton"
+            src="images/backtotop.png"></button>
     <!-- content -->
     <ul class="category-zone">
         <li class="category-item">
-            <img class="category-img" src="images/category/item08.jpg">
-            <div class="category-title">Fast food</div>
+            <div id="0" class="cate-item">
+                <img class="category-img" src="images/category/item08.jpg">
+                <div class="category-title">Toàn bộ</div>
+            </div>
         </li>
         <li class="category-item">
-            <img class="category-img" src="images/category/item02.jpg">
-            <div class="category-title">Entrée</div>
+            <div id="1" class="cate-item">
+                <img class="category-img" src="images/category/item02.jpg">
+                <div class="category-title">Món chính</div>
+            </div>
         </li>
         <li class="category-item">
-            <img class="category-img" src="images/category/item05.jpg">
-            <div class="category-title">Salad</div>
+            <div id="2" class="cate-item">
+                <img class="category-img" src="images/category/item05.jpg">
+                <div class="category-title">Rau</div>
+            </div>
         </li>
         <li class="category-item">
-            <img class="category-img" src="images/category/item07.jpg">
-            <div class="category-title">Dessert</div>
+            <div id="3" class="cate-item">
+                <img class="category-img" src="images/category/item07.jpg">
+                <div class="category-title">Bánh</div>
+            </div>
         </li>
         <li class="category-item">
-            <img class="category-img" src="images/category/item03.jpg">
-            <div class="category-title">Refreshment</div>
+            <div id="4" class="cate-item">
+                <img class="category-img" src="images/category/item03.jpg">
+                <div class="category-title">Nước</div>
+            </div>
         </li>
     </ul>
     <section class="wrapper">
         <div class="products">
-            <ul>
-                <li class="main-product">
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item01.jpg"alt="">
-			<!--figcaption>Những chiếc burger thơm ngon với thịt bò mềm mại, phô mai béo ngậy, rau xanh tươi mát sẽ giúp bạn vượt qua một ngày dài bận rộn.</figcaption-->
-            <figcaption>We offer these burgers, especially for those who wish for a quick meal. Even though hastily made for you, we assure you that it would bring you the energy needed for your day. </figcaption>
-			</figure>
+                        <img class="img-prd" src="images/menu/item01.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Cheese Hamburger</h3>
-			<div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">5$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Hamburger bò phô mai</h3>
+                        <span class="content-product-des">Hamburger</span>
                     </div>
-                </li>
-                <li class="main-product">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">5$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item02.jpg"
-                            alt="">
-			<!--figcaption>Pizza Pepperoni trứ danh của miền Nam Italia, với sự kết hợp của nguyên liệu tươi ngon và các loại gia vị đặc trưng sẽ mang đến trải nghiệm khó quên cho bạn.</figcaption -->
-            <figcaption>Pizza with Pepperoni topping is the best choice for families, friends, or any large gathering. Hornel is our choice, when it comes to the pepperoni.</figcaption>
-			</figure>
+                        <img class="img-prd" src="images/menu/item02.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Pepperoni Pizza</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">10$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Pizza Pepperoni</h3>
+                        <span class="content-product-des">Pizza Pepperoni</span>
+
                     </div>
-                </li>
-                <li class="main-product">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">10$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item03.jpg"
-                            alt="">
-            <figcaption>Orange juice is the perfect refreshment for a scorching summer day. Using only organic oranges, we assure that your drink is also an excellent choice for your health. </figcaption>
-			</figure>
+                        <img class="img-prd" src="images/menu/item03.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Orange Juice</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">1$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Nước cam có đường</h3>
+                        <span class="content-product-des">Orange juice</span>
                     </div>
-                </li>
-                <li class="main-product no-margin">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">1$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item04.jpg"
-                            alt="">
-			<!--figcaption>Sợi mỳ Spaghetti trứ danh, kết hợp cùng thịt bò thơm mềm và cà chua Sottolestelle, giúp bạn trải nghiệm cảm giác thưởng thức một đặc sản Ý chính hiệu.</figcaption-->
-			<figcaption> Our secret recipe sauce, using locally grown tomatoes, is what makes this dish a wonderful main course choice. We even have a meatless version, as the will of our customers.  </figcaption>
-            </figure>
+                        <img class="img-prd" src="images/menu/item04.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">VL1's Spaghetti</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">10$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Mỳ Ý bò bằm</h3>
+                        <span class="content-product-des">Spaghetti with minced beef</span>
                     </div>
-                </li>
-                <li class="main-product">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">10$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item05.jpg"
-                            alt="">
-			<!--figcaption>Món ăn không thể bỏ qua với các tín đồ làm đẹp! Rau củ tươi mát kết hợp cùng bơ Đà Lạt hảo hạng mang lại cảm giác thanh tịnh, nhẹ nhàng.</figcaption-->
-            <figcaption>A great choice, for vegans, vegetarians, or simply food lovers alike! We guarantee to use fresh avocado straight from Dalat, and locally grown vegetable.</figcaption>
-			</figure>
+                        <img class="img-prd" src="images/menu/item05.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Avocado Salad</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">3$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Salad bơ</h3>
+                        <span class="content-product-des">Avocado salad</span>
                     </div>
-                </li>
-                <li class="main-product">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">3$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item06.jpg"
-                            alt="">
-			<!--figcaption>Lựa chọn tuyệt vời cho các bữa tiệc sang trọng, ấm cúng! Một ly rượu vang cùng một miếng beefsteak cho bữa tối, thật tuyệt vời đúng không nào?</figcaption-->
-			<figcaption>A fine choice, especially for fancy dinner. Our wine experts will let you know, which of our great wine collection would go well with your dinner. </figcaption>
-            </figure>
+                        <img class="img-prd" src="images/menu/item06.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Dalat Wine</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">20$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Rượu vang Đà Lạt</h3>
+                        <span class="content-product-des">Dalat Wine</span>
                     </div>
-                </li>
-                <li class="main-product">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">10$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item07.jpg"
-                            alt="">
-			<!--figcaption>Công thức đặc biệt từ các thợ làm bánh nhà nghề đến từ xứ sở kim chi, với lớp kem thơm dịu đặc biệt phủ lên phần bánh mềm xốp, mịn màng.</figcaption-->
-            <figcaption>Made with the dedication of our pastry chef, this Korean confectionery is a delightful choice for dessert, or birthday parties. The icing would bring joy for your great day</figcaption>
-			</figure>
+                        <img class="img-prd" src="images/menu/item07.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Korean Cake</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">15$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Bánh kem Hàn Quốc</h3>
+                        <span class="content-product-des">Korean ice cream cake</span>
                     </div>
-                </li>
-                <li class="main-product no-margin">
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">15$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+            <div class="main-product">
+                <div class="open-mini-zone">
                     <div class="img-product">
-                        <figure>
-			<img class="img-prd"
-                            src="images/menu/item08.jpg"
-                            alt="">
-			<!--figcaption>Thưởng thức đặc sản của miền Nam yêu thương với vỏ bánh nóng hổi giòn rụm, tôm tươi chắc nịch kết hợp với rau xanh tươi mát, bổ dưỡng tuyệt vời.</figcaption -->
-			<figcaption>The crispy tortilla, the delicious shrimps, the freshly picked greens, all in one bite. This uniquely Southern Vietnamese dish will surely bring you joy and amazement.</figcaption>
-            </figure>
+                        <img class="img-prd" src="images/menu/item08.jpg" alt="">
                     </div>
                     <div class="content-product">
-                        <h3 class="content-product-h3">Bánh xèo</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">3$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
+                        <h3 class="content-product-h3">Bánh xèo miền Nam</h3>
+                        <span class="content-product-des">Banh Xeo</span>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="content-product-deltals">
+                    <span class="price">3$</span>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                </div>
+            </div>
         </div>
     </section>
+    <div class="mini-zone">
+        <div id="Hamburger bò phô mai" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Hamburger bò phô mai</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item01.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Hamberger được làm từ thịt bò, cà chua, xà lách, phô
+                                    mai.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">5$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Pizza Pepperoni" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Pizza Pepperoni</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item02.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Pizza Pepperoni được làm từ bột mỳ, phô mai, thịt,
+                                    xúc xích, rau chuẩn Ý.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">10$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Nước cam có đường" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Nước cam có đường</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item03.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Nước cam được làm từ cam sành mua trực tiếp tại
+                                    vườn. Mỗi ngày luôn là nước mới.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">1$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Mỳ Ý bò bằm" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Mỳ Ý bò bằm</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item04.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Mỳ được sản xuất trong ngày kèm theo nước sốt cà
+                                    chua nguyên chất và thịt bò nhập khẩu từ Nhật Bản.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">10$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Salad bơ" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Salad bơ</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item05.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Salad được trộn bằng nước sốt bí mật của nhà hàng,
+                                    bơ vừa chín tới giúp tăng độ béo.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">3$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Rượu vang Đà Lạt" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Rượu vang Đà Lạt</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item06.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Rượu được ủ 10 năm bằng những quả nho chín mọng được
+                                    trồng tại Đà Lạt.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">10$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Bánh kem Hàn Quốc" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Hamburger bò phô mai</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item07.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Bánh kem được làm theo phong cách Hàn Quốc. Do đầu
+                                    bếp người Hàn trực tiếp làm.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">15$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Bánh xèo miền Nam" class="modal">
+            <div class="mini-zone-content">
+                <div class="mini-zone-header">
+                    <h5 class="mini-zone-modal-title">Bánh xèo miền Nam</h5>
+                    <span class="mini-zone-close">&times;</span>
+                </div>
+                <div class="mini-zone-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="img-prd" style="width: 100%;border-radius: 30px"
+                                    src="images/menu/item08.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="mini-zone-description">Bánh xèo giòn rụm nhờ chiên giòn trong chảo ngập
+                                    dầu.</span>
+                                <span class="mini-zone-price">Price:<span class="mini-zone-money">3$</span></span>
+                                <button type="button" class="btn mini-zone-btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer>
         <div class="footer-item">
-            <div class="img-footer">
-                <img src="images/logo.png" alt="" />
-            </div>
-            <div class="contact_infor">
-                <div class="contact_row"><strong class="contact_title">Contacts</strong></div>
-                <div class="contact_row"><strong class="contact_font">Address:</strong> HCMUT CS1, HCM City, VN</div>
-                <div class="contact_row"><strong class="contact_font">Phone:</strong> 084 0000 000</div>
-                <div class="contact_row"><strong class="contact_font">Email:</strong> vl1res@gmail.com</div>
-                <div class="contact_row"><strong class="contact_font">Fax:</strong> +84 000 000 000</div>
-            </div>
-            <div class="contact_infor">
-                <div class="contact_row"><strong class="contact_title">About Us</strong></div>
-                <div class="contact_row">VL1Restaurant Co.op</div>
-                <div class="contact_row">VL1 Develop Team</div>
-                <div class="contact_row">Support Team</div>
+            <div class="container" style="margin: 0; padding: 0;">
+                <div class="row" style="margin: 0; padding: 0;">
+                    <div class="col-sm-4">
+                        <div class="img-footer">
+                            <img src="images/logo.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact_infor">
+                            <div class="contact_row"><strong class="contact_title">Contacts</strong></div>
+                            <div class="contact_row"><strong class="contact_font">Address:</strong> HCMUT CS1, HCM City,
+                                VN</div>
+                            <div class="contact_row"><strong class="contact_font">Phone:</strong> 084 0000 000</div>
+                            <div class="contact_row"><strong class="contact_font">Email:</strong> vl1res@gmail.com</div>
+                            <div class="contact_row"><strong class="contact_font">Fax:</strong> +84 000 000 000</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="contact_infor">
+                            <div class="contact_row"><strong class="contact_title">About Us</strong></div>
+                            <div class="contact_row">VL1Restaurant Co.op</div>
+                            <div class="contact_row">VL1 Develop Team</div>
+                            <div class="contact_row">Support Team</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
     <!-- script -->
-     <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/mini-zone.js"></script>
+    <script src="js/add-menu.js"></script>
 </body>
 
 </html>
