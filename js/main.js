@@ -68,10 +68,10 @@ var add_cart = document.getElementsByClassName("btn-cart");
 for (var i = 0; i < add_cart.length; i++) {
   var add = add_cart[i];
   add.addEventListener("click", function (event) {
-
     var button = event.target;
     var product = button.parentElement.parentElement;
-    var img = product.parentElement.getElementsByClassName("img-prd")[0].src
+    // var zone = product.getElementsByClassName("open-mini-zone");
+    var img = product.getElementsByClassName("img-prd")[0].src
     var title = product.getElementsByClassName("content-product-h3")[0].innerText
     var price = product.getElementsByClassName("price")[0].innerText
     addItemToCart(title, price, img)
